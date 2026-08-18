@@ -1,0 +1,28 @@
+{
+    "name": "Prosto Bookmarks",
+    "short_name": "Prosto Bookmarks",
+    "icons": [
+        {
+              "src": "/pwa-icon.png",
+              "sizes": "192x192",
+              "type": "image/png"
+            }
+    ],
+    "start_url": "/",
+    "scope": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#000",
+    "description": "Bookmark app",
+    "dir": "ltr",
+    "lang": "en-US",
+    "share_target": {
+        "action": "/add",
+        "method": "POST",
+        "enctype": "multipart/form-data",
+        "params": {
+            "title": "title",
+            "url": "url"
+        }
+      }
+}
